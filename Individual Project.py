@@ -11,8 +11,8 @@ while i<number:
         if s==0:
             x1=str(randint(0,100))
             x2=str(randint(0,100-int(x1)))
-            if (x1,x2) not in ls:
-                ls.append((x1,x2))
+            if (x1,"+",x2) not in ls:
+                ls.append((x1,"+",x2))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"+"+x2+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)+int(x2))+"\n")
@@ -20,8 +20,8 @@ while i<number:
         else:
             x1=str(randint(0,100))
             x2=str(randint(0,int(x1)))
-            if (x1,x2) not in ls:
-                ls.append((x1,x2))
+            if (x1,"-",x2) not in ls:
+                ls.append((x1,“-”，x2))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"-"+x2+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)-int(x2))+"\n")
@@ -34,8 +34,8 @@ while i<number:
             x1=str(randint(0,100))
             x2=str(randint(0,100-int(x1)))
             x3=str(randint(0,100-int(x1)-int(x2)))
-            if (x1,x2,x3) not in ls:
-                ls.append((x1,x2,x3))
+            if (x1,"+",x2,"+",x3) not in ls:
+                ls.append((x1,"+",x2,"+",x3))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"+"+x2+"+"+x3+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)+int(x2)+int(x3))+"\n")
@@ -44,8 +44,8 @@ while i<number:
             x1=str(randint(0,100))
             x2=str(randint(0,100-int(x1)))
             x3=str(randint(0,int(x1)+int(x2)))
-            if (x1,x2,x3) not in ls:
-                ls.append((x1,x2,x3))
+            if (x1,"+",x2,"-",x3) not in ls:
+                ls.append((x1,"+",x2,"-",x3))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"+"+x2+"-"+x3+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)+int(x2)-int(x3))+"\n")
@@ -54,8 +54,8 @@ while i<number:
             x1=str(randint(0,100))
             x2=str(randint(0,int(x1)))
             x3=str(randint(0,100-int(x1)+int(x2)))
-            if (x1,x2,x3) not in ls:
-                ls.append((x1,x2,x3))
+            if (x1,"-",x2,"+",x3) not in ls:
+                ls.append((x1,"-",x2,"+",x3))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"-"+x2+"+"+x3+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)-int(x2)+int(x3))+"\n")
@@ -64,8 +64,8 @@ while i<number:
             x1=str(randint(0,100))
             x2=str(randint(0,int(x1)))
             x3=str(randint(0,int(x1)-int(x2)))
-            if (x1,x2,x3) not in ls:
-                ls.append((x1,x2,x3))
+            if (x1,"-",x2,"-",x3) not in ls:
+                ls.append((x1,"-",x2,"-",x3))
                 i=str(i+1)
                 file.write(i+"."+"四则运算题目"+i+" "+x1+"-"+x2+"-"+x3+"=\n")
                 file1.write(i+"."+"答案"+i+" "+str(int(x1)-int(x2)-int(x3))+"\n")
